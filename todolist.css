@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 450px;
+  background-color: rgb(237, 210, 210);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Input and Button */
+#inputcontainer {
+  display: flex;
+  gap: 10px;
+}
+
+#todoinput {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+#todoinput:focus {
+  border-color: #007bff;
+}
+
+#todobtn {
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#todobtn:hover {
+  background-color: #0056b3;
+}
+
+/* Todo List */
+#todoadd {
+  margin-top: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+#todoadd li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 5px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #007bff;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #333;
+}
+
+.deletebtn {
+  padding: 6px 8px;
+  background-color: #f30564;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.savebtn {
+  padding: 6px 8px;
+  background-color: #49b466;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 180px;
+}
